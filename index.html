@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/styles/common.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
 </head>
+
 <body>
-    Hello World
+    <nav class="navbar">
+        <div class="logo">LOGO</div>
+        <div class="hamburger">&#9776;</div>
+        <div class="menu">
+            <a href="#">About Us</a>
+            <div class="dropdown">
+                <a href="#">Explore Courses</a>
+                <div class="dropdown-content">
+                    <a href="#">Course 1</a>
+                    <a href="#">Course 2</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Explore Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Service 1</a>
+                    <a href="#">Service 2</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Courses/Service</a>
+                <div class="dropdown-content">
+                    <a href="#">Option 1</a>
+                    <a href="#">Option 2</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+
+            <a href="#">Contact Us</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+    <div class="search-container">
+        <input type="text" placeholder="Search here...">
+        <button>Search</button>
+    </div>
+    <script>
+        document.querySelector(".hamburger").addEventListener("click", function () {
+            document.querySelector(".menu").classList.toggle("show");
+        });
+    </script>
 </body>
+
 </html>
