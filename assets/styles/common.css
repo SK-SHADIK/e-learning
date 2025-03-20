@@ -1,0 +1,24 @@
+:root {
+    --flamingo: #ed5324;
+    --affair: #7c4394;
+    --fun-green: #047c3c;
+    --curious-blue: #1c94d5;
+    --torea-bay: #0c448c;
+    --torea-bay: #0c469c;
+    --torea-bay: #0c4494;
+    --carrot-orange: #f48d1c;
+    --calypso: #285c74;
+    --jacarta: #302c74;
+    --white: #fff;
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
