@@ -1,9 +1,9 @@
-.navbar {
+.navbar-main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    color: white;
+    background: var(--fun-green);
+    color: var(--white);
     padding: 15px;
     position: fixed;
     width: 100%;
@@ -11,86 +11,91 @@
     z-index: 1000;
 }
 
-.logo {
+.logo-brand {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-.menu {
+.nav-menu {
     display: flex;
     gap: 20px;
 }
 
-.menu a {
-    color: white;
+.nav-menu a {
+    color: var(--white);
     text-decoration: none;
 }
 
-.dropdown {
+.nav-dropdown {
     position: relative;
 }
 
-.dropdown-content {
+.nav-dropdown-content {
     display: none;
     position: absolute;
-    background: white;
+    background: var(--white);
     min-width: 150px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown-content a {
-    color: black;
+.nav-dropdown-content a {
+    color: var(--black);
     padding: 10px;
     display: block;
     text-decoration: none;
 }
 
-.dropdown:hover .dropdown-content {
+.nav-dropdown:hover .nav-dropdown-content {
     display: block;
 }
 
-.search-container {
+.search-bar {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background: #444;
+    background: var(--calypso);
     margin-top: 50px;
 }
 
-.search-container input {
+.search-bar input {
     width: 100%;
     padding: 10px;
     font-size: 1em;
 }
 
-.search-container button {
+.search-bar button {
     padding: 10px;
     font-size: 1em;
+    background: var(--flamingo);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
 }
 
-.hamburger {
+.nav-toggle {
     display: none;
     cursor: pointer;
     font-size: 2em;
+    color: var(--white);
 }
 
 @media (max-width: 768px) {
-    .menu {
+    .nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
         left: 0;
-        background: #333;
+        background: var(--torea-bay);
         width: 100%;
     }
 
-    .menu.show {
+    .nav-menu.show {
         display: flex;
     }
 
-    .hamburger {
+    .nav-toggle {
         display: block;
     }
 }
