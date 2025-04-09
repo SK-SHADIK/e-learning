@@ -7,6 +7,7 @@
     <title>E-Learning</title>
     <link rel="stylesheet" href="assets/styles/common.css">
     <link rel="stylesheet" href="assets/styles/navbar.css">
+    <link rel="stylesheet" href="assets/styles/slider.css">
 </head>
 
 <body>
@@ -72,7 +73,49 @@
         </div>
     </nav>
 
+    <div class="main-content">
+
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-header">Slide 1 Header</h2>
+                        <p class="slide-subtext">This is the description for slide 1.</p>
+                        <a href="#" class="explore-btn">Explore More</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="assets/images/421067-PE0BR7-748.jpg" alt="Slide 1 Image">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-header">Slide 2 Header</h2>
+                        <p class="slide-subtext">This is the description for slide 2.</p>
+                        <a href="#" class="explore-btn">Explore More</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="assets/images/6334076.jpg" alt="Slide 2 Image">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <h2 class="slide-header">Slide 3 Header</h2>
+                        <p class="slide-subtext">This is the description for slide 3.</p>
+                        <a href="#" class="explore-btn">Explore More</a>
+                    </div>
+                    <div class="slide-image">
+                        <img src="assets/images/person-holding-light-bulb-with-graduation-cap.jpg" alt="Slide 3 Image">
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
     <script src="assets/scripts/nav.js"></script>
+    <script src="assets/scripts/slider.js"></script>
 
 </body>
 
