@@ -2,52 +2,78 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Learning</title>
     <link rel="stylesheet" href="assets/styles/common.css">
     <link rel="stylesheet" href="assets/styles/navbar.css">
 </head>
 
 <body>
-    <nav class="navbar-main">
-        <div class="logo-brand">LOGO</div>
-        <div class="nav-toggle">&#9776;</div>
-        <div class="nav-menu">
-            <a href="#">About Us</a>
-            <div class="nav-dropdown">
-                <a href="#">Explore Courses</a>
-                <div class="nav-dropdown-content">
-                    <a href="#">Course 1</a>
-                    <a href="#">Course 2</a>
-                </div>
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+
+        <div class="nav-right">
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleNavbar(this)">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="nav-dropdown">
-                <a href="#">Explore Services</a>
-                <div class="nav-dropdown-content">
-                    <a href="#">Service 1</a>
-                    <a href="#">Service 2</a>
-                </div>
-            </div>
-            <div class="nav-dropdown">
-                <a href="#">Courses/Service</a>
-                <div class="nav-dropdown-content">
-                    <a href="#">Option 1</a>
-                    <a href="#">Option 2</a>
-                </div>
-            </div>
+
+            <!-- Cart icon (mobile) -->
+            <a href="#" class="cart-container cart-mobile" title="View Cart">
+                <div class="cart"></div>
+                <div class="cart-count">0</div>
+            </a>
         </div>
-        <div class="nav-menu">
-            <a href="#">Contact Us</a>
-            <a href="#">Login</a>
+
+        <!-- Nav menu (toggleable) -->
+        <div class="nav-section-container">
+            <div class="nav-section menu-section">
+                <div class="dropdown">
+                    <a class="dropdown-btn">Category</a>
+                    <div class="dropdown-content">
+                        <a href="#">Tech</a>
+                        <a href="#">Fashion</a>
+                        <a href="#">Health</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="dropdown-btn">Others</a>
+                    <div class="dropdown-content">
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+
+            <div class="nav-section action-section">
+                <div class="dropdown lang-dropdown">
+                    <button class="dropdown-btn">Language</button>
+                    <div class="dropdown-content">
+                        <a href="#">Bangla</a>
+                        <a href="#">English</a>
+                    </div>
+                </div>
+
+                <!-- Cart icon (desktop) -->
+                <a href="#" class="cart-container cart-desktop" title="View Cart">
+                    <div class="cart"></div>
+                    <div class="cart-count">0</div>
+                </a>
+
+                <a href="#" class="login">Login</a>
+                <a href="#" class="signup">Sign Up</a>
+            </div>
         </div>
     </nav>
-    <div class="search-bar">
-        <input type="text" placeholder="Search here...">
-        <button>Search</button>
-    </div>
 
     <script src="assets/scripts/nav.js"></script>
+
 </body>
 
 </html>
