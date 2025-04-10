@@ -1,6 +1,6 @@
 .testimonial-section {
-    padding: 60px 20px;
-    background-color: #fff;
+    padding: 30px 0;
+    background-color: var(--white);
     text-align: center;
 }
 
