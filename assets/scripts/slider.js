@@ -6,7 +6,7 @@ const slider = document.getElementById('slider');
 // Auto Slider
 setInterval(() => {
     nextSlide();
-}, 5000); // Change slide every 5 seconds
+}, 7000); // Change slide every 5 seconds
 
 // Function to show the next slide
 function nextSlide() {
