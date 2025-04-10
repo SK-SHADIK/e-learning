@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../assets/styles/contact.css">
     <link rel="stylesheet" href="../assets/styles/help-center.css">
     <link rel="stylesheet" href="../assets/styles/faq.css">
+    <link rel="stylesheet" href="../assets/styles/feedback.css">
     <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
     <link rel="stylesheet" href="../assets/styles/footer.css">
 </head>
@@ -47,7 +48,7 @@
                 <div class="dropdown">
                     <a class="dropdown-btn">Category</a>
                     <div class="dropdown-content">
-                         <a href="courses.html">Tech</a>
+                        <a href="courses.html">Tech</a>
                         <a href="courses.html">Fashion</a>
                         <a href="courses.html">Health</a>
                     </div>
@@ -88,31 +89,41 @@
 
     <!-- Main Section Start -->
     <section class="main-content">
-        <!-- Contact Section -->
-        <section class="contact-form-section">
-            <div class="contact-form-container">
-                <!-- Contact Form -->
-                <div class="contact-form-box">
-                    <h3>Feedback</h3>
-                    <p>Submit your feedback. Your Feedback is important to us.</p>
-                    <form action="#" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="tel" name="phone" placeholder="Your Phone" required>
+        <section class="feedback-section">
+            <div class="feedback-container">
+                <h1 class="feedback-title">We Value Your Feedback</h1>
+                <p class="feedback-description">Please let us know how we can improve our services by submitting your
+                    feedback below.</p>
 
-                        <!-- Inquiry Type Dropdown -->
-                        <!-- <select name="inquiry_type" required>
-                        <option value="" disabled selected>Select Inquiry Type</option>
-                        <option value="contact">General Contact</option>
-                        <option value="appointment">Schedule an Appointment</option>
-                        <option value="property">Course Info</option>
-                        <option value="other">Other</option>
-                    </select> -->
-
-                        <textarea name="message" placeholder="Write your feedback..." rows="5" required></textarea>
-                        <button type="submit" class="contact-form-submit-btn">Send Feedback</button>
-                    </form>
-                </div>
+                <form action="#" method="POST" class="feedback-form">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="feedback">Your Feedback</label>
+                        <textarea id="feedback" name="feedback" placeholder="Write your feedback here" rows="5"
+                            required></textarea>
+                    </div>
+                    <div class="input-group">
+                        <label for="rating">Rating</label>
+                        <select id="rating" name="rating" required>
+                            <option value="" disabled selected>Select your rating</option>
+                            <option value="5">5 - Excellent</option>
+                            <option value="4">4 - Good</option>
+                            <option value="3">3 - Average</option>
+                            <option value="2">2 - Poor</option>
+                            <option value="1">1 - Terrible</option>
+                        </select>
+                    </div>
+                    <div class="feedback-actions">
+                        <button type="submit" class="feedback-button">Submit Feedback</button>
+                    </div>
+                </form>
             </div>
         </section>
     </section>
