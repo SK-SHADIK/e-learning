@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-learning | Contact</title>
+    <title>E-learning | Course</title>
     <link rel="stylesheet" href="../assets/styles/common.css">
     <link rel="stylesheet" href="../assets/styles/navbar.css">
     <link rel="stylesheet" href="../assets/styles/slider.css">
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../assets/styles/help-center.css">
     <link rel="stylesheet" href="../assets/styles/faq.css">
     <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
+    <link rel="stylesheet" href="../assets/styles/course.css">
     <link rel="stylesheet" href="../assets/styles/footer.css">
 </head>
 
@@ -88,47 +89,71 @@
 
     <!-- Main Section Start -->
     <section class="main-content">
-        <!-- Contact Section -->
-        <section class="contact-form-section">
-            <h2>Get In Touch</h2>
-            <div class="contact-form-container">
-                <!-- Contact Form -->
-                <div class="contact-form-box">
-                    <h3>Contact Us</h3>
-                    <form action="#" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="tel" name="phone" placeholder="Your Phone" required>
-
-                        <!-- Inquiry Type Dropdown -->
-                        <select name="inquiry_type" required>
-                            <option value="" disabled selected>Select Inquiry Type</option>
-                            <option value="contact">General Contact</option>
-                            <option value="appointment">Schedule an Appointment</option>
-                            <option value="property">Course Info</option>
-                            <option value="other">Other</option>
-                        </select>
-
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="contact-form-submit-btn">Send Message</button>
-                    </form>
+        <section class="product-page">
+            <div class="product-container">
+                <!-- Product Image and Info -->
+                <div class="product-image-container">
+                    <img src="../assets/images/1106.jpg" alt="Product Image" class="product-image">
                 </div>
 
-                <!-- Contact Info and Map -->
-                <div class="contact-form-info">
-                    <h3>Our Office</h3>
-                    <p><strong>Address:</strong> 123 Main Street, Dhaka, Bangladesh</p>
-                    <p><strong>Phone:</strong> +123 456 789</p>
-                    <p><strong>Email:</strong> contact@e-learning.com</p>
+                <div class="product-details">
+                    <h1 class="product-title">Product Title</h1>
+                    <div class="product-price">
+                        <span class="original-price">$99.99</span>
+                        <span class="discount-price">$79.99</span>
+                    </div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews">(200+ reviews)</span>
+                    </div>
+                    <div class="buy-now">
+                        <span class="buy-count">400+ Bought</span>
+                    </div>
 
-                    <!-- Google Map Embed -->
-                    <div class="contact-form-google-map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.3171838068465!2d144.953735315318!3d-37.813627979751206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5be1fe1a77%3A0x19cc35fa588d5c27!2s123%20Real%20Estate%20St%2C%20Melbourne%2C%20VIC%203000!5e0!3m2!1sen!2sau!4v1608008950811!5m2!1sen!2sau"
-                            frameborder="0" style="border:0; width: 100%; height: 250px;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
+                    <!-- Short Product Description -->
+                    <p class="product-description">This is a short description of the course. This is a short
+                        description of the course. This is a short description of the course<span
+                            class="more-info">...</span></p>
+
+                    <div class="product-actions">
+                        <a href="#" class="see-more">See More</a>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
                     </div>
                 </div>
+            </div>
+
+            <!-- YouTube Embed Video -->
+            <div class="product-video">
+                <h2>Watch Introduction</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+
+            <!-- Detailed Description Section -->
+            <div class="detailed-description">
+                <h2>Description</h2>
+                <p class="full-description">
+                    This is the full, detailed description of the course/product. It includes all the necessary
+                    information, including benefits, features, and everything a potential customer would need to know
+                    before making a purchase decision. Whether it's a course outline, benefits, target audience, or
+                    expected outcomes, this section will have it all.
+                </p>
+                <p class="full-description">
+                    The course is structured in an easy-to-follow manner, with clear objectives, detailed lessons, and
+                    engaging content. By the end of this course, learners will have the skills and confidence to apply
+                    the knowledge they've gained. Whether you're a beginner or looking to improve your skills, this
+                    course is designed to meet your needs.
+                </p>
+                <p class="full-description">
+                    The course covers:
+                </p>
+                <ul class="course-list">
+                    <li>Introduction to key concepts</li>
+                    <li>Step-by-step lessons with real-life examples</li>
+                    <li>Assignments and quizzes to test your knowledge</li>
+                    <li>24/7 access to course materials</li>
+                    <li>Certification upon successful completion</li>
+                </ul>
             </div>
         </section>
     </section>

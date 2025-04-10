@@ -28,7 +28,7 @@
 }
 
 .testimonial-card:hover {
-    background-color: var(--fun-green);
+    background-color: var(--calypso);
     color: var(--white);
     transform: translateY(-5px);
 }
