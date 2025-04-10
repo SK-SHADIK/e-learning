@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning | Course</title>
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <link rel="stylesheet" href="../assets/styles/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/slider.css">
+    <link rel="stylesheet" href="../assets/styles/category-section.css">
+    <link rel="stylesheet" href="../assets/styles/card-section.css">
+    <link rel="stylesheet" href="../assets/styles/partner-section.css">
+    <link rel="stylesheet" href="../assets/styles/testimonial-section.css">
+    <link rel="stylesheet" href="../assets/styles/about.css">
+    <link rel="stylesheet" href="../assets/styles/contact.css">
+    <link rel="stylesheet" href="../assets/styles/help-center.css">
+    <link rel="stylesheet" href="../assets/styles/faq.css">
+    <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
+    <link rel="stylesheet" href="../assets/styles/course.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+</head>
+
+<body>
+
+    <!-- Nav Bar Section Start -->
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+
+        <div class="nav-right">
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleNavbar(this)">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Cart icon (mobile) -->
+            <a href="#" class="cart-container cart-mobile" title="View Cart">
+                <div class="cart"></div>
+                <div class="cart-count">0</div>
+            </a>
+        </div>
+
+        <!-- Nav menu (toggleable) -->
+        <div class="nav-section-container">
+            <div class="nav-section menu-section">
+                <div class="dropdown">
+                    <a class="dropdown-btn">Category</a>
+                    <div class="dropdown-content">
+                        <a href="#">Tech</a>
+                        <a href="#">Fashion</a>
+                        <a href="#">Health</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="dropdown-btn">Others</a>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+
+            <div class="nav-section action-section">
+                <div class="dropdown lang-dropdown">
+                    <button class="dropdown-btn">Language</button>
+                    <div class="dropdown-content">
+                        <a href="#">Bangla</a>
+                        <a href="#">English</a>
+                    </div>
+                </div>
+
+                <!-- Cart icon (desktop) -->
+                <a href="#" class="cart-container cart-desktop" title="View Cart">
+                    <div class="cart"></div>
+                    <div class="cart-count">0</div>
+                </a>
+
+                <a href="#" class="login">Login</a>
+                <a href="#" class="signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar Section End -->
+
+    <!-- Main Section Start -->
+    <section class="main-content">
+        <section class="product-page">
+            <div class="product-container">
+                <!-- Product Image and Info -->
+                <div class="product-image-container">
+                    <img src="../assets/images/1106.jpg" alt="Product Image" class="product-image">
+                </div>
+
+                <div class="product-details">
+                    <h1 class="product-title">Product Title</h1>
+                    <div class="product-price">
+                        <span class="original-price">$99.99</span>
+                        <span class="discount-price">$79.99</span>
+                    </div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews">(200+ reviews)</span>
+                    </div>
+                    <div class="buy-now">
+                        <span class="buy-count">400+ Bought</span>
+                    </div>
+
+                    <!-- Short Product Description -->
+                    <p class="product-description">This is a short description of the course. This is a short
+                        description of the course. This is a short description of the course<span
+                            class="more-info">...</span></p>
+
+                    <div class="product-actions">
+                        <a href="#" class="see-more">See More</a>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- YouTube Embed Video -->
+            <div class="product-video">
+                <h2>Watch Introduction</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+
+            <!-- Detailed Description Section -->
+            <div class="detailed-description">
+                <h2>Description</h2>
+                <p class="full-description">
+                    This is the full, detailed description of the course/product. It includes all the necessary
+                    information, including benefits, features, and everything a potential customer would need to know
+                    before making a purchase decision. Whether it's a course outline, benefits, target audience, or
+                    expected outcomes, this section will have it all.
+                </p>
+                <p class="full-description">
+                    The course is structured in an easy-to-follow manner, with clear objectives, detailed lessons, and
+                    engaging content. By the end of this course, learners will have the skills and confidence to apply
+                    the knowledge they've gained. Whether you're a beginner or looking to improve your skills, this
+                    course is designed to meet your needs.
+                </p>
+                <p class="full-description">
+                    The course covers:
+                </p>
+                <ul class="course-list">
+                    <li>Introduction to key concepts</li>
+                    <li>Step-by-step lessons with real-life examples</li>
+                    <li>Assignments and quizzes to test your knowledge</li>
+                    <li>24/7 access to course materials</li>
+                    <li>Certification upon successful completion</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="custom-footer">
+        <div class="footer-top">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="help-center.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 123 Main Street, Dhaka, Bangladesh</p>
+                <p>📞 +880 1700000000</p>
+                <p>✉️ info@e-learning.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Stay Connected</h4>
+                <div class="footer-social">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Twitter"></a>
+                </div>
+                <a href="complaint.html" class="complaint-btn">Complaint Box</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 All rights reserved by E-Learning.</p>
+        </div>
+    </footer>
+
+    <!-- Footer Section End -->
+
+    <script src="../assets/scripts/nav.js"></script>
+    <script src="../assets/scripts/slider.js"></script>
+
+</body>
+
+</html>
