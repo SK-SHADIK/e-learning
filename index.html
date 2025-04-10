@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/styles/common.css">
     <link rel="stylesheet" href="assets/styles/navbar.css">
     <link rel="stylesheet" href="assets/styles/slider.css">
+    <link rel="stylesheet" href="assets/styles/category-section.css">
 </head>
 
 <body>
@@ -73,9 +74,9 @@
         </div>
     </nav>
 
-    <div class="main-content">
+    <section class="main-content">
 
-        <div class="slider-container">
+        <section class="slider-container">
             <div class="slider" id="slider">
                 <div class="slide">
                     <div class="slide-content">
@@ -111,8 +112,30 @@
             <!-- Navigation Buttons -->
             <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
             <button class="next-btn" onclick="nextSlide()">&#10095;</button>
-        </div>
-    </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Explore Learning Categories</h2>
+            <div class="category-grid">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2721/2721294.png"
+                        alt="Programming"><span>Programming</span></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1907/1907937.png"
+                        alt="Design"><span>Design</span></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png"
+                        alt="Marketing"><span>Marketing</span></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2885/2885451.png"
+                        alt="Data Science"><span>Data Science</span></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                        alt="Business"><span>Business</span></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3349/3349173.png"
+                        alt="Photography"><span>Photography</span></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1670/1670049.png"
+                        alt="Language"><span>Language</span></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+                        alt="Personal Development"><span>Personal Growth</span></a>
+            </div>
+        </section>
+    </section>
 
     <script src="assets/scripts/nav.js"></script>
     <script src="assets/scripts/slider.js"></script>
