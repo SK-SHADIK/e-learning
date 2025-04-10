@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-learning | Course</title>
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <link rel="stylesheet" href="../assets/styles/navbar.css">
+    <link rel="stylesheet" href="../assets/styles/slider.css">
+    <link rel="stylesheet" href="../assets/styles/category-section.css">
+    <link rel="stylesheet" href="../assets/styles/card-section.css">
+    <link rel="stylesheet" href="../assets/styles/partner-section.css">
+    <link rel="stylesheet" href="../assets/styles/testimonial-section.css">
+    <link rel="stylesheet" href="../assets/styles/about.css">
+    <link rel="stylesheet" href="../assets/styles/contact.css">
+    <link rel="stylesheet" href="../assets/styles/help-center.css">
+    <link rel="stylesheet" href="../assets/styles/faq.css">
+    <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
+    <link rel="stylesheet" href="../assets/styles/course.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+</head>
+
+<body>
+
+    <!-- Nav Bar Section Start -->
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+
+        <div class="nav-right">
+            <!-- Hamburger -->
+            <div class="hamburger" onclick="toggleNavbar(this)">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Cart icon (mobile) -->
+            <a href="#" class="cart-container cart-mobile" title="View Cart">
+                <div class="cart"></div>
+                <div class="cart-count">0</div>
+            </a>
+        </div>
+
+        <!-- Nav menu (toggleable) -->
+        <div class="nav-section-container">
+            <div class="nav-section menu-section">
+                <div class="dropdown">
+                    <a class="dropdown-btn">Category</a>
+                    <div class="dropdown-content">
+                        <a href="single-course.html">Tech</a>
+                        <a href="single-course.html">Fashion</a>
+                        <a href="single-course.html">Health</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a class="dropdown-btn">Others</a>
+                    <div class="dropdown-content">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+
+            <div class="nav-section action-section">
+                <div class="dropdown lang-dropdown">
+                    <button class="dropdown-btn">Language</button>
+                    <div class="dropdown-content">
+                        <a href="#">Bangla</a>
+                        <a href="#">English</a>
+                    </div>
+                </div>
+
+                <!-- Cart icon (desktop) -->
+                <a href="#" class="cart-container cart-desktop" title="View Cart">
+                    <div class="cart"></div>
+                    <div class="cart-count">0</div>
+                </a>
+
+                <a href="#" class="login">Login</a>
+                <a href="#" class="signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar Section End -->
+
+    <!-- Main Section Start -->
+    <section class="main-content">
+        <section class="card-section">
+            <!-- <div class="card-section-header">
+                <h1 class="card-section-title">Our Courses</h1>
+                <a href="#" class="card-section-header-btn">Show more</a>
+
+            </div> -->
+            <div class="card-container">
+                <div class="card">
+                    <img src="../assets/images/296.jpg" alt="product-image" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Product Title</h3>
+                        <div class="product-price">
+                            <span class="original-price">$99.99</span>
+                            <span class="discount-price">$79.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(200+ reviews)</span>
+                        </div>
+                        <div class="buy-now">
+                            <span class="buy-count">400+ Buy</span>
+                        </div>
+                        <p class="product-description">This is a short description of the course. This is a short
+                            description of the course. This is a short description of the course<span
+                                class="more-info">...</span></p>
+                        <div class="card-actions">
+                            <a href="pages/single-course.html" class="see-more">See More</a>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/296.jpg" alt="product-image" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Product Title</h3>
+                        <div class="product-price">
+                            <span class="original-price">$99.99</span>
+                            <span class="discount-price">$79.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(200+ reviews)</span>
+                        </div>
+                        <div class="buy-now">
+                            <span class="buy-count">400+ Buy</span>
+                        </div>
+                        <p class="product-description">This is a short description of the course. This is a short
+                            description of the course. This is a short description of the course<span
+                                class="more-info">...</span></p>
+                        <div class="card-actions">
+                            <a href="pages/single-course.html" class="see-more">See More</a>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/296.jpg" alt="product-image" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Product Title</h3>
+                        <div class="product-price">
+                            <span class="original-price">$99.99</span>
+                            <span class="discount-price">$79.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(200+ reviews)</span>
+                        </div>
+                        <div class="buy-now">
+                            <span class="buy-count">400+ Buy</span>
+                        </div>
+                        <p class="product-description">This is a short description of the course. This is a short
+                            description of the course. This is a short description of the course<span
+                                class="more-info">...</span></p>
+                        <div class="card-actions">
+                            <a href="pages/single-course.html" class="see-more">See More</a>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/296.jpg" alt="product-image" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Product Title</h3>
+                        <div class="product-price">
+                            <span class="original-price">$99.99</span>
+                            <span class="discount-price">$79.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(200+ reviews)</span>
+                        </div>
+                        <div class="buy-now">
+                            <span class="buy-count">400+ Buy</span>
+                        </div>
+                        <p class="product-description">This is a short description of the course. This is a short
+                            description of the course. This is a short description of the course<span
+                                class="more-info">...</span></p>
+                        <div class="card-actions">
+                            <a href="pages/single-course.html" class="see-more">See More</a>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/296.jpg" alt="product-image" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Product Title</h3>
+                        <div class="product-price">
+                            <span class="original-price">$99.99</span>
+                            <span class="discount-price">$79.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(200+ reviews)</span>
+                        </div>
+                        <div class="buy-now">
+                            <span class="buy-count">400+ Buy</span>
+                        </div>
+                        <p class="product-description">This is a short description of the course. This is a short
+                            description of the course. This is a short description of the course<span
+                                class="more-info">...</span></p>
+                        <div class="card-actions">
+                            <a href="pages/single-course.html" class="see-more">See More</a>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/296.jpg" alt="product-image" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Product Title</h3>
+                        <div class="product-price">
+                            <span class="original-price">$99.99</span>
+                            <span class="discount-price">$79.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(200+ reviews)</span>
+                        </div>
+                        <div class="buy-now">
+                            <span class="buy-count">400+ Buy</span>
+                        </div>
+                        <p class="product-description">This is a short description of the course. This is a short
+                            description of the course. This is a short description of the course<span
+                                class="more-info">...</span></p>
+                        <div class="card-actions">
+                            <a href="pages/single-course.html" class="see-more">See More</a>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/296.jpg" alt="product-image" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Product Title</h3>
+                        <div class="product-price">
+                            <span class="original-price">$99.99</span>
+                            <span class="discount-price">$79.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(200+ reviews)</span>
+                        </div>
+                        <div class="buy-now">
+                            <span class="buy-count">400+ Buy</span>
+                        </div>
+                        <p class="product-description">This is a short description of the course. This is a short
+                            description of the course. This is a short description of the course<span
+                                class="more-info">...</span></p>
+                        <div class="card-actions">
+                            <a href="pages/single-course.html" class="see-more">See More</a>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/296.jpg" alt="product-image" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Product Title</h3>
+                        <div class="product-price">
+                            <span class="original-price">$99.99</span>
+                            <span class="discount-price">$79.99</span>
+                        </div>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="reviews">(200+ reviews)</span>
+                        </div>
+                        <div class="buy-now">
+                            <span class="buy-count">400+ Buy</span>
+                        </div>
+                        <p class="product-description">This is a short description of the course. This is a short
+                            description of the course. This is a short description of the course<span
+                                class="more-info">...</span></p>
+                        <div class="card-actions">
+                            <a href="pages/single-course.html" class="see-more">See More</a>
+                            <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="custom-footer">
+        <div class="footer-top">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="help-center.html">Help Center</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 123 Main Street, Dhaka, Bangladesh</p>
+                <p>📞 +880 1700000000</p>
+                <p>✉️ info@e-learning.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Stay Connected</h4>
+                <div class="footer-social">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Instagram"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Twitter"></a>
+                </div>
+                <a href="complaint.html" class="complaint-btn">Complaint Box</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 All rights reserved by E-Learning.</p>
+        </div>
+    </footer>
+
+    <!-- Footer Section End -->
+
+    <script src="../assets/scripts/nav.js"></script>
+    <script src="../assets/scripts/slider.js"></script>
+
+</body>
+
+</html>
