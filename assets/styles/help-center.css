@@ -1,0 +1,89 @@
+.help-center-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+}
+
+.help-center-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.help-center-header h1 {
+    font-size: 32px;
+    color: var(--jacarta);
+    margin-bottom: 10px;
+}
+
+.help-center-header p {
+    font-size: 16px;
+    color: #555;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.help-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+}
+
+.help-card h3 {
+    color: var(--carrot-orange);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.help-card p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.help-card a {
+    color: var(--flamingo);
+    font-weight: bold;
+}
+
+.help-contact-box {
+    background-color: var(--jacarta);
+    color: var(--white);
+    padding: 40px;
+    text-align: center;
+    border-radius: var(--border-radius);
+    margin-top: 60px;
+}
+
+.help-contact-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.help-contact-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: var(--carrot-orange);
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    color: var(--white);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: var(--flamingo);
+}
