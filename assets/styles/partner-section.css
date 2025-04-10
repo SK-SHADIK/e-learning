@@ -1,0 +1,28 @@
+.logo-section {
+    padding: 60px 0;
+    background-color: var(--whitesmoke);
+    text-align: center;
+}
+
+.logo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container img {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease, transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
