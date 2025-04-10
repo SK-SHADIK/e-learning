@@ -1,13 +1,13 @@
-.feedback-section {
+.complaint-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('../images/6334076.jpg') no-repeat center center fixed;
+    background: url('../images/person-holding-light-bulb-with-graduation-cap.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
-.feedback-container {
+.complaint-container {
     background-color: var(--white);
     padding: 30px;
     border-radius: var(--border-radius);
@@ -17,19 +17,19 @@
     text-align: center;
 }
 
-.feedback-title {
+.complaint-title {
     font-size: 32px;
     margin-bottom: 20px;
     color: var(--jacarta);
 }
 
-.feedback-description {
+.complaint-description {
     font-size: 16px;
     margin-bottom: 30px;
     color: var(--jacarta);
 }
 
-.feedback-form {
+.complaint-form {
     display: flex;
     flex-direction: column;
 }
@@ -62,11 +62,11 @@ textarea {
     resize: vertical;
 }
 
-.feedback-actions {
+.complaint-actions {
     margin-top: 20px;
 }
 
-.feedback-button {
+.complaint-button {
     padding: 12px;
     background-color: var(--flamingo);
     color: var(--white);
@@ -77,18 +77,18 @@ textarea {
     transition: background-color 0.3s ease;
 }
 
-.feedback-button:hover {
+.complaint-button:hover {
     background-color: var(--carrot-orange);
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-    .feedback-container {
+    .complaint-container {
         width: 100%;
         padding: 20px;
     }
 
-    .feedback-title {
+    .complaint-title {
         font-size: 28px;
     }
 
@@ -98,7 +98,7 @@ textarea {
         font-size: 14px;
     }
 
-    .feedback-button {
+    .complaint-button {
         font-size: 16px;
     }
 }

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../assets/styles/contact.css">
     <link rel="stylesheet" href="../assets/styles/help-center.css">
     <link rel="stylesheet" href="../assets/styles/faq.css">
+    <link rel="stylesheet" href="../assets/styles/complient.css">
     <link rel="stylesheet" href="../assets/styles/privacy-policy.css">
     <link rel="stylesheet" href="../assets/styles/footer.css">
 </head>
@@ -88,33 +89,43 @@
 
     <!-- Main Section Start -->
     <section class="main-content">
-        <!-- Contact Section -->
-        <section class="contact-form-section">
-            <div class="contact-form-container">
-                <!-- Contact Form -->
-                <div class="contact-form-box">
-                    <h3>Compliant</h3>
-                    <p>Submit your complaint. Your Complaint is important to us.</p>
-                    <form action="#" method="POST">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="tel" name="phone" placeholder="Your Phone" required>
-
-                        <!-- Inquiry Type Dropdown -->
-                        <!-- <select name="inquiry_type" required>
-                        <option value="" disabled selected>Select Inquiry Type</option>
-                        <option value="contact">General Contact</option>
-                        <option value="appointment">Schedule an Appointment</option>
-                        <option value="property">Course Info</option>
-                        <option value="other">Other</option>
-                    </select> -->
-
-                        <textarea name="message" placeholder="Write your complaint..." rows="5" required></textarea>
-                        <button type="submit" class="contact-form-submit-btn">Complaint</button>
-                    </form>
-                </div>
+        <section class="complaint-section">
+            <div class="complaint-container">
+                <h1 class="complaint-title">Submit Your Complaint</h1>
+                <p class="complaint-description">Please fill out the form below with your complaint details. We take your concerns seriously and will respond promptly.</p>
+                
+                <form action="#" method="POST" class="complaint-form">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="complaint-type">Complaint Type</label>
+                        <select id="complaint-type" name="complaint-type" required>
+                            <option value="" disabled selected>Select a complaint type</option>
+                            <option value="device-issue">Device Issue</option>
+                            <option value="device-broken">Device Broken</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="complaint-description">Complaint Description</label>
+                        <textarea id="complaint-description" name="complaint-description" placeholder="Describe your complaint in detail" rows="5" required></textarea>
+                    </div>
+                    <div class="complaint-actions">
+                        <button type="submit" class="complaint-button">Submit Complaint</button>
+                    </div>
+                </form>
             </div>
-        </section>
+        </section>        
     </section>
 
     <!-- Footer Section Start -->
